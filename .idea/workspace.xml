@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d0ad81d-0b09-4a77-960a-747319cfdd3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AcctActivityDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AccountSumStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AccountSumStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/BrowserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/BrowserUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579792640963</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ZeroBank AcctTypes">
+      <created>1579801076607</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579801076607</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,34 +140,34 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="296" y="299" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579789376808" />
-    <state x="77" y="130" key="CommitChangelistDialog2" timestamp="1579792640876">
+    <state x="77" y="130" key="CommitChangelistDialog2" timestamp="1579801076483">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="77" y="130" key="CommitChangelistDialog2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579792640876" />
-    <state width="1074" height="294" key="GridCell.Tab.0.bottom" timestamp="1579801020251">
+    <state x="77" y="130" key="CommitChangelistDialog2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801076483" />
+    <state width="967" height="294" key="GridCell.Tab.0.bottom" timestamp="1579801218494">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.bottom/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168582" />
-    <state width="1074" height="294" key="GridCell.Tab.0.bottom/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801020251" />
-    <state width="1074" height="294" key="GridCell.Tab.0.center" timestamp="1579801020249">
+    <state width="967" height="294" key="GridCell.Tab.0.bottom/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801218494" />
+    <state width="967" height="294" key="GridCell.Tab.0.center" timestamp="1579801218491">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.center/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168581" />
-    <state width="1074" height="294" key="GridCell.Tab.0.center/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801020249" />
-    <state width="1074" height="294" key="GridCell.Tab.0.left" timestamp="1579801020248">
+    <state width="967" height="294" key="GridCell.Tab.0.center/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801218491" />
+    <state width="967" height="294" key="GridCell.Tab.0.left" timestamp="1579801218491">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.left/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168581" />
-    <state width="1074" height="294" key="GridCell.Tab.0.left/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801020248" />
-    <state width="1074" height="294" key="GridCell.Tab.0.right" timestamp="1579801020250">
+    <state width="967" height="294" key="GridCell.Tab.0.left/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801218491" />
+    <state width="967" height="294" key="GridCell.Tab.0.right" timestamp="1579801218492">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.right/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168582" />
-    <state width="1074" height="294" key="GridCell.Tab.0.right/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801020250" />
-    <state x="84" y="266" key="Vcs.Push.Dialog.v2" timestamp="1579792642203">
+    <state width="967" height="294" key="GridCell.Tab.0.right/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801218492" />
+    <state x="84" y="266" key="Vcs.Push.Dialog.v2" timestamp="1579801080686">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="84" y="266" key="Vcs.Push.Dialog.v2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579792642203" />
+    <state x="84" y="266" key="Vcs.Push.Dialog.v2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579801080686" />
     <state x="448" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1579773943477">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
