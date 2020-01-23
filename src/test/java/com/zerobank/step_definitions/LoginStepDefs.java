@@ -31,6 +31,12 @@ public class LoginStepDefs {
 
     }
 
+    @When("the user does not enter any credentials")
+    public void the_user_does_not_enter_any_credentials() {
+        LoginPage loginPage = new LoginPage();
+        loginPage.submit.click();
+    }
+
     @Then("the error message should be {string}")
     public void the_error_message_should_be(String expectedMsg) {
         LoginPage loginPage = new LoginPage();

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d0ad81d-0b09-4a77-960a-747319cfdd3f" name="Default Changelist" comment="" />
+    <list default="true" id="0d0ad81d-0b09-4a77-960a-747319cfdd3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountSum.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountSum.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +15,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -18,13 +27,14 @@
     </option>
   </component>
   <component name="ProjectId" id="1Wn3DHNcjFYWMhFxMV3iLscoAoB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/zerobank" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
@@ -82,22 +92,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1166" height="280" key="GridCell.Tab.0.bottom" timestamp="1579772168582">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="927" height="294" key="GridCell.Tab.0.bottom" timestamp="1579785754676">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.bottom/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168582" />
-    <state width="1166" height="280" key="GridCell.Tab.0.center" timestamp="1579772168581">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="927" height="294" key="GridCell.Tab.0.bottom/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579785754676" />
+    <state width="927" height="294" key="GridCell.Tab.0.center" timestamp="1579785754674">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.center/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168581" />
-    <state width="1166" height="280" key="GridCell.Tab.0.left" timestamp="1579772168581">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="927" height="294" key="GridCell.Tab.0.center/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579785754674" />
+    <state width="927" height="294" key="GridCell.Tab.0.left" timestamp="1579785754673">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.left/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168581" />
-    <state width="1166" height="280" key="GridCell.Tab.0.right" timestamp="1579772168582">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="927" height="294" key="GridCell.Tab.0.left/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579785754673" />
+    <state width="927" height="294" key="GridCell.Tab.0.right" timestamp="1579785754675">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.right/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168582" />
+    <state width="927" height="294" key="GridCell.Tab.0.right/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579785754675" />
     <state x="448" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1579773943477">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
