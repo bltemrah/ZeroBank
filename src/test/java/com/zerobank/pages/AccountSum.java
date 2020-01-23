@@ -19,7 +19,7 @@ public class AccountSum {
     public List<WebElement> accountType;
 
     @FindBy (xpath = "(//table[@class = 'table']//thead/tr)[3]/th")
-    public List<WebElement> CrdAcctTable;
+    public List<WebElement> CredAcctTable;
 
 
 }

@@ -36,7 +36,7 @@ public class AccountSumStepDefs {
         BrowserUtils.waitFor(5);
         AccountSum accountSum = new AccountSum();
 
-        List<String> actCrdTable = BrowserUtils.getElementsText(accountSum.CrdAcctTable);
+        List<String> actCrdTable = BrowserUtils.getElementsAttribute(accountSum.CredAcctTable);
 
         Assert.assertEquals(CrdAcctTable, actCrdTable);
 
