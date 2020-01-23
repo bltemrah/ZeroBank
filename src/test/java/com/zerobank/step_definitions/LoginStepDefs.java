@@ -1,7 +1,6 @@
 package com.zerobank.step_definitions;
 
 import com.zerobank.pages.LoginPage;
-import com.zerobank.utilities.ConfigurationReader;
 import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,10 +9,10 @@ import org.junit.Assert;
 
 public class LoginStepDefs {
 
-    @Given("the user is on the login page")
-    public void the_user_is_on_the_login_page() {
-        String url = ConfigurationReader.get("url");
-        Driver.get().get(url);
+    @Given("the user navigates to login page")
+    public void the_user_navigates_to_login_page() {
+        LoginPage loginPage = new LoginPage();
+        loginPage.navigateToLoginPage();
     }
 
     @When("the user enter {string} {string}")
@@ -27,7 +26,6 @@ public class LoginStepDefs {
     public void the_user_should_be_able_to_see(String expectedTitle) {
 
         Assert.assertEquals(Driver.get().getTitle(), expectedTitle);
-
 
     }
 

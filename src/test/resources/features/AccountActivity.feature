@@ -1,5 +1,9 @@
 Feature: Account activity
 
-  Scenario: Account activity page
-    Given the user is on the login page
+  Background:
+    Given the user navigates to login page
+
+
+  Scenario: Account summary page
     When the user enter "username" "password"
+    Then the user should be able to see "Zero - Account Summary"

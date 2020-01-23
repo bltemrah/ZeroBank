@@ -3,48 +3,30 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-23T13:22:35.094Z",
+        "start_timestamp": "2020-01-23T14:23:05.509Z",
         "before": [
           {
             "result": {
-              "duration": 568510,
+              "duration": 424395,
               "status": "passed"
             },
             "match": {
               "location": "Hooks.setUp()"
             }
-          },
-          {
-            "result": {
-              "duration": 71949,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUpLogin()"
-            }
           }
         ],
-        "line": 5,
-        "name": "Login with valid credentials",
+        "line": 4,
+        "name": "Account summary page",
         "description": "",
-        "id": "users-should-be-able-to-login;login-with-valid-credentials",
+        "id": "account-summary;account-summary-page",
         "after": [
           {
             "result": {
-              "duration": 74382782,
+              "duration": 73662678,
               "status": "passed"
             },
             "match": {
               "location": "Hooks.tearDown(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 70892,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDownLogin()"
             }
           }
         ],
@@ -53,22 +35,22 @@
         "steps": [
           {
             "result": {
-              "duration": 3038559090,
+              "duration": 2805499121,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user is on the login page",
+            "line": 5,
+            "name": "the user navigates to login page",
             "match": {
-              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+              "location": "LoginStepDefs.the_user_navigates_to_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1502835353,
+              "duration": 1395490274,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "the user enter \"username\" \"password\"",
             "match": {
               "arguments": [
@@ -83,245 +65,55 @@
               ],
               "location": "LoginStepDefs.the_user_enter(String,String)"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63914,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user have account summary page",
+            "match": {
+              "location": "AccountSumStepDefs.the_user_have_account_summary_page()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7174870,
+              "duration": 2072897722,
               "status": "passed"
             },
             "line": 8,
-            "name": "the user should be able to see \"Zero - Account Summary\"",
+            "name": "the user should be able to see following options",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Zero - Account Summary\"",
-                  "offset": 31
-                }
-              ],
-              "location": "LoginStepDefs.the_user_should_be_able_to_see(String)"
+              "location": "AccountSumStepDefs.the_user_should_be_able_to_see_following_options(String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Cash Accounts",
+                  "Investment Accounts",
+                  "Credit Accounts",
+                  "Loan Accounts"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-23T13:22:39.737Z",
-        "before": [
-          {
-            "result": {
-              "duration": 55883,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          },
-          {
-            "result": {
-              "duration": 34354,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUpLogin()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "Users should not be able to login with unvalid credentials",
-        "description": "",
-        "id": "users-should-be-able-to-login;users-should-not-be-able-to-login-with-unvalid-credentials",
-        "after": [
-          {
-            "result": {
-              "duration": 74958802,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 77650,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDownLogin()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2571763346,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1001409729,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user enter \"user\" \"pass\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"user\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"pass\"",
-                  "offset": 22
-                }
-              ],
-              "location": "LoginStepDefs.the_user_enter(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 23717110,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the error message should be \"Login and/or password are wrong.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Login and/or password are wrong.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "LoginStepDefs.the_error_message_should_be(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-23T13:22:43.412Z",
-        "before": [
-          {
-            "result": {
-              "duration": 78531,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          },
-          {
-            "result": {
-              "duration": 35560,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUpLogin()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Users should not be able to login without any credentials",
-        "description": "",
-        "id": "users-should-be-able-to-login;users-should-not-be-able-to-login-without-any-credentials",
-        "after": [
-          {
-            "result": {
-              "duration": 78135384,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 72866,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDownLogin()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2414110807,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the user is on the login page",
-            "match": {
-              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 461314880,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user does not enter any credentials",
-            "match": {
-              "location": "LoginStepDefs.the_user_does_not_enter_any_credentials()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 32860752,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the error message should be \"Login and/or password are wrong.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Login and/or password are wrong.\"",
-                  "offset": 28
-                }
-              ],
-              "location": "LoginStepDefs.the_error_message_should_be(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Users should be able to login",
+    "name": "Account summary",
     "description": "",
-    "id": "users-should-be-able-to-login",
+    "id": "account-summary",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/AccountSummary.feature",
     "tags": []
   }
 ]
