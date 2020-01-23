@@ -7,19 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class AccountSum {
+public class AcctActivity {
 
-    public AccountSum() {
-
+    public AcctActivity () {
         PageFactory.initElements(Driver.get(), this);
-
     }
 
-    @FindBy(css = "[class = 'offset2 span8']>h2")
-    public List<WebElement> accountType;
+    @FindBy (css = "#aa_accountId>option")
+    public List<WebElement> acctOption;
 
-    @FindBy (xpath = "(//table[@class = 'table']//thead/tr)[3]/th")
-    public List<WebElement> CredAcctTable;
+    @FindBy (css = "#aa_accountId>option:nth-of-type(1)")
+    public WebElement deafultAcctOption;
+
 
 
 }

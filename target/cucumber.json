@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3044750253,
+              "duration": 2636821542,
               "status": "passed"
             },
             "line": 4,
@@ -20,46 +20,13 @@
               "location": "LoginStepDefs.the_user_navigates_to_login_page()"
             },
             "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-23T17:40:18.949Z",
-        "before": [
+          },
           {
             "result": {
-              "duration": 504273,
+              "duration": 1484882015,
               "status": "passed"
             },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 7,
-        "name": "Account summary page",
-        "description": "",
-        "id": "account-activity;account-summary-page",
-        "after": [
-          {
-            "result": {
-              "duration": 77065811,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1661537940,
-              "status": "passed"
-            },
-            "line": 8,
+            "line": 5,
             "name": "the user enter \"username\" \"password\"",
             "match": {
               "arguments": [
@@ -75,29 +42,80 @@
               "location": "LoginStepDefs.the_user_enter(String,String)"
             },
             "keyword": "When "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-23T23:00:32.236Z",
+        "before": [
           {
             "result": {
-              "duration": 7653265,
+              "duration": 432283,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the user should be able to see \"Zero - Account Summary\"",
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Account drop down default option",
+        "description": "",
+        "id": "account-activity;account-drop-down-default-option",
+        "after": [
+          {
+            "result": {
+              "duration": 74297728,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1165345415,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "navigate to \"Account Activity\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Zero - Account Summary\"",
-                  "offset": 31
+                  "val": "\"Account Activity\"",
+                  "offset": 12
                 }
               ],
-              "location": "LoginStepDefs.the_user_should_be_able_to_see(String)"
+              "location": "AcctActivityDefs.navigate_to(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32663729,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user shoould be able to see \"Savings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 32
+                }
+              ],
+              "location": "AcctActivityDefs.the_user_shoould_be_able_to_see(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AcctActivity"
+            "name": "@AcctActvOption"
           }
         ]
       }

@@ -25,6 +25,12 @@ public class LoginStepDefs {
     @Then("the user should be able to see {string}")
     public void the_user_should_be_able_to_see(String expectedTitle) {
 
+//        BrowserUtils.waitFor(2);
+//        String actualTitle = new BasePage().getPageSubTitle();
+//        System.out.println(actualTitle);
+
+        //Assert.assertEquals(expectedTitle, actualTitle );
+
         Assert.assertEquals(Driver.get().getTitle(), expectedTitle);
 
     }

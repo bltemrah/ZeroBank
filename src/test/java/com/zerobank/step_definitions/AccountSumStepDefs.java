@@ -1,6 +1,6 @@
 package com.zerobank.step_definitions;
 
-import com.zerobank.pages.AccountSum;
+import com.zerobank.pages.AcctSummary;
 import com.zerobank.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -22,7 +22,7 @@ public class AccountSumStepDefs {
         System.out.println("Account types: " + acctTypes);
 
         BrowserUtils.waitFor(2);
-        AccountSum accountSum = new AccountSum();
+        AcctSummary accountSum = new AcctSummary();
         List<String> actualAcctTypes = BrowserUtils.getElementsText(accountSum.accountType);
         System.out.println(actualAcctTypes);
         Assert.assertEquals(acctTypes, actualAcctTypes);
@@ -34,7 +34,7 @@ public class AccountSumStepDefs {
         System.out.println("Credit account Table: " + CrdAcctTable);
 
         BrowserUtils.waitFor(5);
-        AccountSum accountSum = new AccountSum();
+        AcctSummary accountSum = new AcctSummary();
 
         List<String> actCrdTable = BrowserUtils.getElementsAttribute(accountSum.CredAcctTable);
 
