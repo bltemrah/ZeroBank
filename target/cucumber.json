@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2418682323,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-23T09:33:32.859Z",
+        "before": [
+          {
+            "result": {
+              "duration": 637641,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Login as authorized users",
+        "description": "",
+        "id": "account-summary;login-as-authorized-users",
+        "after": [
+          {
+            "result": {
+              "duration": 76475406,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1474921220,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enter \"username\" \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginStepDefs.the_user_enter(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6760428,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user should be able to see \"Zero - Account Summary\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Summary\"",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginStepDefs.the_user_should_be_able_to_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Account summary",
+    "description": "",
+    "id": "account-summary",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AccountSum.feature",
+    "tags": []
+  }
+]
