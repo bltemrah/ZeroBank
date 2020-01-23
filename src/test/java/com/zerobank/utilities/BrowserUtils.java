@@ -53,6 +53,20 @@ public class BrowserUtils {
     }
 
     /**
+     * return a list of string from a list of elements
+     *
+     * @param list of webelements
+     * @return list of string
+     */
+    public static List<String> getElementsAttribute(List<WebElement> list) {
+        List<String> elemTexts = new ArrayList<>();
+        for (WebElement el : list) {
+            elemTexts.add(el.getAttribute("innerHTML"));
+        }
+        return elemTexts;
+    }
+
+    /**
      * Extracts text from list of elements matching the provided locator into new List<String>
      *
      * @param locator

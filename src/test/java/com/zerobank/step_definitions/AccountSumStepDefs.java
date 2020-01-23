@@ -24,10 +24,22 @@ public class AccountSumStepDefs {
         BrowserUtils.waitFor(2);
         AccountSum accountSum = new AccountSum();
         List<String> actualAcctTypes = BrowserUtils.getElementsText(accountSum.accountType);
-
+        System.out.println(actualAcctTypes);
         Assert.assertEquals(acctTypes, actualAcctTypes);
 
+    }
 
+    @Then("the user should be able to see following tables")
+    public void the_user_should_be_able_to_see_following_tables(List<String> CrdAcctTable) {
+        System.out.println("Credit account Table: " + CrdAcctTable);
+
+        BrowserUtils.waitFor(5);
+        AccountSum accountSum = new AccountSum();
+
+        List<String> actCrdTable = BrowserUtils.getElementsText(accountSum.CrdAcctTable);
+
+        Assert.assertEquals(CrdAcctTable, actCrdTable);
 
     }
+
 }

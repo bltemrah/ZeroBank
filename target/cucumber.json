@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-23T14:23:05.509Z",
+        "start_timestamp": "2020-01-23T15:16:44.040Z",
         "before": [
           {
             "result": {
-              "duration": 424395,
+              "duration": 453147,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Account summary page",
+        "line": 13,
+        "name": "Credit account table",
         "description": "",
-        "id": "account-summary;account-summary-page",
+        "id": "account-summary;credit-account-table",
         "after": [
           {
             "result": {
-              "duration": 73662678,
+              "duration": 76781052,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2805499121,
+              "duration": 3179465125,
               "status": "passed"
             },
-            "line": 5,
+            "line": 14,
             "name": "the user navigates to login page",
             "match": {
               "location": "LoginStepDefs.the_user_navigates_to_login_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1395490274,
+              "duration": 1694815698,
               "status": "passed"
             },
-            "line": 6,
+            "line": 15,
             "name": "the user enter \"username\" \"password\"",
             "match": {
               "arguments": [
@@ -69,10 +69,10 @@
           },
           {
             "result": {
-              "duration": 63914,
+              "duration": 75149,
               "status": "passed"
             },
-            "line": 7,
+            "line": 16,
             "name": "the user have account summary page",
             "match": {
               "location": "AccountSumStepDefs.the_user_have_account_summary_page()"
@@ -81,21 +81,20 @@
           },
           {
             "result": {
-              "duration": 2072897722,
+              "duration": 5062016844,
               "status": "passed"
             },
-            "line": 8,
-            "name": "the user should be able to see following options",
+            "line": 17,
+            "name": "the user should be able to see following tables",
             "match": {
-              "location": "AccountSumStepDefs.the_user_should_be_able_to_see_following_options(String\u003e)"
+              "location": "AccountSumStepDefs.the_user_should_be_able_to_see_following_tables(String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "Cash Accounts",
-                  "Investment Accounts",
-                  "Credit Accounts",
-                  "Loan Accounts"
+                  "Account",
+                  "Credit Card",
+                  "Balance"
                 ]
               }
             ],

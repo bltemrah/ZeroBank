@@ -18,5 +18,8 @@ public class AccountSum {
     @FindBy(css = "[class = 'offset2 span8']>h2")
     public List<WebElement> accountType;
 
+    @FindBy (xpath = "(//table[@class = 'table']//thead/tr)[3]/th")
+    public List<WebElement> CrdAcctTable;
+
 
 }
