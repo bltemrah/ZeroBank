@@ -8,11 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PayBill {
 
-    public PayBill () {
+    public PayBill() {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    @FindBy (xpath = "//title")
+    @FindBy(xpath = "//title")
     public WebElement payBillTitle;
 
     /**
@@ -24,4 +24,32 @@ public class PayBill {
         BrowserUtils.waitForStaleElement(payBillTitle);
         return payBillTitle.getText();
     }
+
+    @FindBy(css = "#sp_payee")
+    public WebElement selectPayee;
+
+    @FindBy (css = "#sp_account")
+    public WebElement selectPayAccount;
+
+    @FindBy (css = "#sp_amount")
+    public WebElement selectPayAmount;
+
+    @FindBy (css = "#sp_date")
+    public WebElement selectPayDate;
+
+    @FindBy (css = "#sp_description")
+    public WebElement selectPayDesc;
+
+    @FindBy (xpath = "//input[@id='pay_saved_payees']")
+    public WebElement payButton;
+
+
+
+    @FindBy (xpath = "//div[@id='alert_content']/span")
+    public WebElement payMsg;
+
+
+
+
+
 }
