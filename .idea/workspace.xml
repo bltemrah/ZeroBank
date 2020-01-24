@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d0ad81d-0b09-4a77-960a-747319cfdd3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AcctActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AcctSummary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AccountSumStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AccountSumStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AcctActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AcctActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AcctActivityDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AcctActivityDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/LoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/LoginStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/utilities/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/LoginStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/LoginStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579810384760</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ZeroBank BasePage Locators">
+      <created>1579820462810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579820462810</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -152,10 +151,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="ZeroBank BasePage Locators" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="296" y="299" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579789376808">
+    <state x="296" y="299" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1579823554271">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="296" y="299" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579789376808" />
+    <state x="296" y="299" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579823554271" />
+    <state x="100" y="100" width="809" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1579822758303">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="100" y="100" width="809" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579822758303" />
     <state x="141" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579819599382">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -164,34 +167,34 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="249" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579819547077" />
-    <state x="77" y="130" key="CommitChangelistDialog2" timestamp="1579810384646">
+    <state x="77" y="130" key="CommitChangelistDialog2" timestamp="1579820462708">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="77" y="130" key="CommitChangelistDialog2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579810384646" />
-    <state width="967" height="294" key="GridCell.Tab.0.bottom" timestamp="1579820431823">
+    <state x="77" y="130" key="CommitChangelistDialog2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579820462708" />
+    <state width="1060" height="294" key="GridCell.Tab.0.bottom" timestamp="1579826054203">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.bottom/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168582" />
-    <state width="967" height="294" key="GridCell.Tab.0.bottom/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579820431823" />
-    <state width="967" height="294" key="GridCell.Tab.0.center" timestamp="1579820431821">
+    <state width="1060" height="294" key="GridCell.Tab.0.bottom/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054203" />
+    <state width="1060" height="294" key="GridCell.Tab.0.center" timestamp="1579826054201">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.center/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168581" />
-    <state width="967" height="294" key="GridCell.Tab.0.center/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579820431821" />
-    <state width="967" height="294" key="GridCell.Tab.0.left" timestamp="1579820431820">
+    <state width="1060" height="294" key="GridCell.Tab.0.center/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054201" />
+    <state width="1060" height="294" key="GridCell.Tab.0.left" timestamp="1579826054200">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.left/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168581" />
-    <state width="967" height="294" key="GridCell.Tab.0.left/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579820431820" />
-    <state width="967" height="294" key="GridCell.Tab.0.right" timestamp="1579820431822">
+    <state width="1060" height="294" key="GridCell.Tab.0.left/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054200" />
+    <state width="1060" height="294" key="GridCell.Tab.0.right" timestamp="1579826054202">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.right/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168582" />
-    <state width="967" height="294" key="GridCell.Tab.0.right/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579820431822" />
-    <state x="84" y="266" key="Vcs.Push.Dialog.v2" timestamp="1579810386326">
+    <state width="1060" height="294" key="GridCell.Tab.0.right/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054202" />
+    <state x="84" y="266" key="Vcs.Push.Dialog.v2" timestamp="1579820464240">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="84" y="266" key="Vcs.Push.Dialog.v2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579810386326" />
+    <state x="84" y="266" key="Vcs.Push.Dialog.v2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579820464240" />
     <state x="448" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1579773943477">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

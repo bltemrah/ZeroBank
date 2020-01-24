@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2636821542,
+              "duration": 3826895049,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1484882015,
+              "duration": 3235274197,
               "status": "passed"
             },
             "line": 5,
@@ -46,11 +46,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-23T23:00:32.236Z",
+        "start_timestamp": "2020-01-24T00:34:14.628Z",
         "before": [
           {
             "result": {
-              "duration": 432283,
+              "duration": 448076,
               "status": "passed"
             },
             "match": {
@@ -58,14 +58,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "Account drop down default option",
+        "line": 31,
+        "name": "Transaction type options",
         "description": "",
-        "id": "account-activity;account-drop-down-default-option",
+        "id": "account-activity;transaction-type-options",
         "after": [
           {
             "result": {
-              "duration": 74297728,
+              "duration": 79323278,
               "status": "passed"
             },
             "match": {
@@ -78,10 +78,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1165345415,
+              "duration": 2236408685,
               "status": "passed"
             },
-            "line": 13,
+            "line": 32,
             "name": "navigate to \"Account Activity\"",
             "match": {
               "arguments": [
@@ -96,26 +96,50 @@
           },
           {
             "result": {
-              "duration": 32663729,
+              "duration": 67229115,
               "status": "passed"
             },
-            "line": 14,
-            "name": "the user shoould be able to see \"Savings\"",
+            "line": 33,
+            "name": "click to \"Find Transactions\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Savings\"",
-                  "offset": 32
+                  "val": "\"Find Transactions\"",
+                  "offset": 9
                 }
               ],
-              "location": "AcctActivityDefs.the_user_shoould_be_able_to_see(String)"
+              "location": "AcctActivityDefs.click_to(String)"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2093626348,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the user should be able to see the following transaction type",
+            "match": {
+              "location": "AcctActivityDefs.the_user_should_be_able_to_see_the_following_transaction_type(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Any",
+                  "Deposit",
+                  "Withdrawal"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AcctActvOption"
+            "name": "@AcctActivity"
+          },
+          {
+            "name": "@wip"
           }
         ]
       }
