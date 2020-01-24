@@ -14,7 +14,7 @@ Feature: Account activity
     And the user navigate to "Account Activity"
     Then the user shoould be able to see "Savings"
 
-
+  @check
   Scenario: Account drop down all options
     And the user navigate to "Account Activity"
     Then the user should be able to see the following drop down options

@@ -22,7 +22,7 @@ Feature: Pay bill
     And the user does not enter the amount or data
     Then the user should be able to see the message "Please fill out this field message!"
 
-  @wip
+
   Scenario: Ammount field should not accept alphabetical or special characters
     When the user click to "Pay Bill"
     And the user enter the amount with alphabetical characters

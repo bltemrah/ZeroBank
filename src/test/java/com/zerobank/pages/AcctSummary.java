@@ -21,5 +21,9 @@ public class AcctSummary {
     @FindBy (xpath = "(//table[@class = 'table']//thead/tr)[3]/th")
     public List<WebElement> CredAcctTable;
 
+    @FindBy (xpath = "(//a[@style= 'text-decoration: underline'])[1]")
+    public WebElement savings;
+
+
 
 }

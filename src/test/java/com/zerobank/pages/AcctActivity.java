@@ -14,6 +14,9 @@ public class AcctActivity {
         PageFactory.initElements(Driver.get(), this);
     }
 
+    @FindBy (xpath = "//title")
+    public WebElement pageTitle;
+
     @FindBy (css = "#aa_accountId>option")
     public List<WebElement> acctOption;
 
@@ -39,6 +42,13 @@ public class AcctActivity {
 
         return new Select(transTypes);
     }
+
+    @FindBy (css = "#aa_accountId")
+    public WebElement accountType;
+
+
+    @FindBy (css = "#aa_accountId>option")
+    public List<WebElement> actType;
 
 
 
