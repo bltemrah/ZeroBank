@@ -12,8 +12,8 @@ import java.util.List;
 
 public class AcctActivityDefs {
 
-    @When("navigate to {string}")
-    public void navigate_to(String tab) {
+    @When("the user navigate to {string}")
+    public void the_user_navigate_to(String tab) {
 
         new BasePage().acctActivity.click();
 

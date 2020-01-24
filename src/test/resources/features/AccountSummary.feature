@@ -1,4 +1,4 @@
-Feature: Account summary
+Feature: Account summary page
 
   @AcctType
   Scenario: Account summary page
