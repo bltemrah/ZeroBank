@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
+        "line": 4,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3826895049,
+              "duration": 3166690698,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "the user navigates to login page",
             "match": {
               "location": "LoginStepDefs.the_user_navigates_to_login_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 3235274197,
+              "duration": 1535615023,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the user enter \"username\" \"password\"",
             "match": {
               "arguments": [
@@ -41,16 +41,16 @@
               ],
               "location": "LoginStepDefs.the_user_enter(String,String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-24T00:34:14.628Z",
+        "start_timestamp": "2020-01-24T09:43:13.239Z",
         "before": [
           {
             "result": {
-              "duration": 448076,
+              "duration": 622538,
               "status": "passed"
             },
             "match": {
@@ -58,14 +58,14 @@
             }
           }
         ],
-        "line": 31,
-        "name": "Transaction type options",
+        "line": 9,
+        "name": "Account activity page title",
         "description": "",
-        "id": "account-activity;transaction-type-options",
+        "id": "pay-bill;account-activity-page-title",
         "after": [
           {
             "result": {
-              "duration": 79323278,
+              "duration": 83530560,
               "status": "passed"
             },
             "match": {
@@ -78,65 +78,44 @@
         "steps": [
           {
             "result": {
-              "duration": 2236408685,
+              "duration": 1142341945,
               "status": "passed"
             },
-            "line": 32,
-            "name": "navigate to \"Account Activity\"",
+            "line": 10,
+            "name": "the user click to \"Pay Bill\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Account Activity\"",
-                  "offset": 12
+                  "val": "\"Pay Bill\"",
+                  "offset": 18
                 }
               ],
-              "location": "AcctActivityDefs.navigate_to(String)"
+              "location": "PayBillDefs.the_user_click_to(String)"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 67229115,
+              "duration": 6043213391,
               "status": "passed"
             },
-            "line": 33,
-            "name": "click to \"Find Transactions\"",
+            "line": 11,
+            "name": "the user should be able to see \"Zero - Pay Bills\" as title",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Find Transactions\"",
-                  "offset": 9
+                  "val": "\"Zero - Pay Bills\"",
+                  "offset": 31
                 }
               ],
-              "location": "AcctActivityDefs.click_to(String)"
+              "location": "PayBillDefs.the_user_should_be_able_to_see_as_title(String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2093626348,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "the user should be able to see the following transaction type",
-            "match": {
-              "location": "AcctActivityDefs.the_user_should_be_able_to_see_the_following_transaction_type(String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Any",
-                  "Deposit",
-                  "Withdrawal"
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AcctActivity"
+            "name": "@PayBill"
           },
           {
             "name": "@wip"
@@ -144,11 +123,20 @@
         ]
       }
     ],
-    "name": "Account activity",
+    "name": "Pay bill",
     "description": "",
-    "id": "account-activity",
+    "id": "pay-bill",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountActivity.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/PayBill.feature",
+    "tags": [
+      {
+        "name": "@PayBill",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

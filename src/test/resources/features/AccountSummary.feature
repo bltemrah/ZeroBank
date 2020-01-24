@@ -1,6 +1,7 @@
+@AcctType
 Feature: Account summary page
 
-  @AcctType
+
   Scenario: Account summary page
     Given the user navigates to login page
     And the user enter "username" "password"
@@ -8,8 +9,6 @@ Feature: Account summary page
     Then the user should be able to see following options
       | Cash Accounts | Investment Accounts | Credit Accounts | Loan Accounts |
 
-
-  @wip
   Scenario: Credit account table
     Given the user navigates to login page
     And the user enter "username" "password"
