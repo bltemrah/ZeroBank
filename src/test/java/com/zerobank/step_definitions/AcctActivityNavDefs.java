@@ -6,6 +6,8 @@ import com.zerobank.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -45,8 +47,50 @@ public class AcctActivityNavDefs {
         String defaultItem = actDropDown.get(0);
         System.out.println(defaultItem);
 
-        //Assert.assertEquals(expDropDown, defaultItem);
+        Assert.assertEquals(expDropDown, defaultItem);
+    }
+
+    @When("the user clicks on Brokerage link on the Investment Account under Account Summary page")
+    public void the_user_clicks_on_Brokerage_link_on_the_Investment_Account_under_Account_Summary_page() {
+        AcctSummary acctSummary = new AcctSummary();
+        acctSummary.brokerage.click();
 
     }
+
+    @Then("Account drop down should have {string} selected")
+    public void account_drop_down_should_have_selected(String expType) {
+        AcctActivity acctActivity = new AcctActivity();
+        BrowserUtils.waitFor(2);
+        Select select = new Select(acctActivity.accountBrokerType);
+        WebElement options = select.getFirstSelectedOption();
+        BrowserUtils.waitFor(2);
+        String defaultItem = options.getText();
+
+        Assert.assertEquals(expType, defaultItem);
+
+    }
+
+    @When("the user clicks on Checking link on the Credit Account under Account Summary page")
+    public void the_user_clicks_on_Checking_link_on_the_Credit_Account_under_Account_Summary_page() {
+        AcctSummary acctSummary = new AcctSummary();
+        acctSummary.checking.click();
+    }
+
+    @Then("Credit Account should have {string} under show transaction account")
+    public void credit_Account_should_have_under_show_transaction_account(String expDefaultType) {
+
+        AcctActivity acctActivity = new AcctActivity();
+        BrowserUtils.waitFor(3);
+        Select select = new Select(acctActivity.showTrans);
+        WebElement options = select.getFirstSelectedOption();
+        BrowserUtils.waitFor(3);
+        String acctType = options.getText();
+
+        Assert.assertEquals(expDefaultType, acctType);
+
+
+    }
+
+
 
 }

@@ -51,6 +51,14 @@ public class AcctActivity {
     public List<WebElement> actType;
 
 
+    @FindBy (css = "#aa_accountId")
+    public WebElement accountBrokerType;
+
+
+    @FindBy (css = "#aa_accountId")
+    public WebElement showTrans;
+
+
 
 
 

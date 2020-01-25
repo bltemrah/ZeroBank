@@ -3,42 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-24T16:34:50.316Z",
-        "before": [
-          {
-            "result": {
-              "duration": 480916,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "Saving account redirect",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;saving-account-redirect",
-        "after": [
-          {
-            "result": {
-              "duration": 80147534,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 2504271462,
+              "duration": 3216927547,
               "status": "passed"
             },
-            "line": 6,
+            "line": 4,
             "name": "the user navigates to login page",
             "match": {
               "location": "LoginStepDefs.the_user_navigates_to_login_page()"
@@ -47,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 1182891741,
+              "duration": 1512265776,
               "status": "passed"
             },
-            "line": 7,
+            "line": 5,
             "name": "the user enter \"username\" \"password\"",
             "match": {
               "arguments": [
@@ -66,25 +42,58 @@
               "location": "LoginStepDefs.the_user_enter(String,String)"
             },
             "keyword": "And "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-25T00:04:49.162Z",
+        "before": [
           {
             "result": {
-              "duration": 429906646,
+              "duration": 463855,
               "status": "passed"
             },
-            "line": 8,
-            "name": "the user clicks on Saving link on the Cash Account under Account Summary page",
             "match": {
-              "location": "AcctActivityNavDefs.the_user_clicks_on_Saving_link_on_the_Cash_Account_under_Account_Summary_page()"
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Checking account redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;checking-account-redirect",
+        "after": [
+          {
+            "result": {
+              "duration": 82967348,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1026774193,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user clicks on Checking link on the Credit Account under Account Summary page",
+            "match": {
+              "location": "AcctActivityNavDefs.the_user_clicks_on_Checking_link_on_the_Credit_Account_under_Account_Summary_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 6045345487,
+              "duration": 6052907117,
               "status": "passed"
             },
-            "line": 9,
+            "line": 25,
             "name": "the page should be displayed \"Zero - Account Activity\"",
             "match": {
               "arguments": [
@@ -99,19 +108,19 @@
           },
           {
             "result": {
-              "duration": 5067316255,
+              "duration": 6096295534,
               "status": "passed"
             },
-            "line": 10,
-            "name": "Account drop down menu should shows \"Savings\"",
+            "line": 26,
+            "name": "Credit Account should have \"Checking\" under show transaction account",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Savings\"",
-                  "offset": 36
+                  "val": "\"Checking\"",
+                  "offset": 27
                 }
               ],
-              "location": "AcctActivityNavDefs.account_drop_down_menu_should_shows(String)"
+              "location": "AcctActivityNavDefs.credit_Account_should_have_under_show_transaction_account(String)"
             },
             "keyword": "And "
           }

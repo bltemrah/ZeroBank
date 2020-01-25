@@ -39,7 +39,7 @@ public class AcctActivityDefs {
         AcctActivity acctActivity = new AcctActivity();
         List<String> actDropDown = BrowserUtils.getElementsAttribute(acctActivity.acctOption);
         String firstOption = actDropDown.get(0);
-        System.out.println(firstOption);
+
 
         //List<WebElement> actDropDown = acctActivity.repeatOptionsList().getOptions();
         //get text of each webelement and return as a list of String
