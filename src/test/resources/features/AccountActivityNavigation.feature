@@ -18,10 +18,21 @@ Feature: Navigating to specific accounts in Accounts Activity
     Then the page should be displayed "Zero - Account Activity"
     And Account drop down should have "Brokerage" selected
 
-  @wip
   Scenario: Checking account redirect
 
     When the user clicks on Checking link on the Credit Account under Account Summary page
     Then the page should be displayed "Zero - Account Activity"
     And Credit Account should have "Checking" under show transaction account
 
+  Scenario: Credit Card account redirect
+
+    When the user clicks on Credit Card link on the Credit Account under Account Summary page
+    Then the page should be displayed "Zero - Account Activity"
+    And Credit Account should have "Credit Card" as default option
+
+  @wip
+  Scenario: Loan account redirect
+
+    When the user clicks on Loan link on the Loan Account under Account Summary page
+    Then the page should be displayed "Zero - Account Activity"
+    And Loan Account should have "Loan" as default option

@@ -30,6 +30,11 @@ public class AcctSummary {
     @FindBy (xpath = "(//a[@style = 'text-decoration: underline'])[4]")
     public WebElement checking;
 
+    @FindBy (xpath = "(//a[@style = 'text-decoration: underline'])[5]")
+    public WebElement creditCard;
+
+    @FindBy (xpath = "(//a[@style = 'text-decoration: underline'])[6]")
+    public WebElement loan;
 
 
 

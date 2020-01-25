@@ -88,9 +88,45 @@ public class AcctActivityNavDefs {
 
         Assert.assertEquals(expDefaultType, acctType);
 
-
     }
 
+    @When("the user clicks on Credit Card link on the Credit Account under Account Summary page")
+    public void the_user_clicks_on_Credit_Card_link_on_the_Credit_Account_under_Account_Summary_page() {
+        AcctSummary acctSummary = new AcctSummary();
+        acctSummary.creditCard.click();
+    }
+
+    @Then("Credit Account should have {string} as default option")
+    public void credit_Account_should_have_as_default_option(String expType) {
+
+        AcctActivity acctActivity = new AcctActivity();
+        BrowserUtils.waitFor(3);
+        Select select = new Select(acctActivity.showTrans);
+        WebElement options = select.getFirstSelectedOption();
+        BrowserUtils.waitFor(3);
+        String acctType = options.getText();
+
+        Assert.assertEquals(expType, acctType);
+    }
+
+    @When("the user clicks on Loan link on the Loan Account under Account Summary page")
+    public void the_user_clicks_on_Loan_link_on_the_Loan_Account_under_Account_Summary_page() {
+        AcctSummary acctSummary = new AcctSummary();
+        acctSummary.loan.click();
+    }
+
+    @Then("Loan Account should have {string} as default option")
+    public void loan_Account_should_have_as_default_option(String expType) {
 
 
+        AcctActivity acctActivity = new AcctActivity();
+        BrowserUtils.waitFor(3);
+        Select select = new Select(acctActivity.showTrans);
+        WebElement options = select.getFirstSelectedOption();
+        BrowserUtils.waitFor(3);
+        String acctType = options.getText();
+
+        Assert.assertEquals(expType, acctType);
+
+    }
 }

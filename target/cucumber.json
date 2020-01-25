@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3216927547,
+              "duration": 2809229976,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1512265776,
+              "duration": 1535083758,
               "status": "passed"
             },
             "line": 5,
@@ -46,11 +46,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-25T00:04:49.162Z",
+        "start_timestamp": "2020-01-25T00:27:56.029Z",
         "before": [
           {
             "result": {
-              "duration": 463855,
+              "duration": 518553,
               "status": "passed"
             },
             "match": {
@@ -58,14 +58,14 @@
             }
           }
         ],
-        "line": 22,
-        "name": "Checking account redirect",
+        "line": 34,
+        "name": "Loan account redirect",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;checking-account-redirect",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;loan-account-redirect",
         "after": [
           {
             "result": {
-              "duration": 82967348,
+              "duration": 82282968,
               "status": "passed"
             },
             "match": {
@@ -78,22 +78,22 @@
         "steps": [
           {
             "result": {
-              "duration": 1026774193,
+              "duration": 934261764,
               "status": "passed"
             },
-            "line": 24,
-            "name": "the user clicks on Checking link on the Credit Account under Account Summary page",
+            "line": 36,
+            "name": "the user clicks on Loan link on the Loan Account under Account Summary page",
             "match": {
-              "location": "AcctActivityNavDefs.the_user_clicks_on_Checking_link_on_the_Credit_Account_under_Account_Summary_page()"
+              "location": "AcctActivityNavDefs.the_user_clicks_on_Loan_link_on_the_Loan_Account_under_Account_Summary_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 6052907117,
+              "duration": 6045943816,
               "status": "passed"
             },
-            "line": 25,
+            "line": 37,
             "name": "the page should be displayed \"Zero - Account Activity\"",
             "match": {
               "arguments": [
@@ -108,19 +108,19 @@
           },
           {
             "result": {
-              "duration": 6096295534,
+              "duration": 6114266790,
               "status": "passed"
             },
-            "line": 26,
-            "name": "Credit Account should have \"Checking\" under show transaction account",
+            "line": 38,
+            "name": "Loan Account should have \"Loan\" as default option",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Checking\"",
-                  "offset": 27
+                  "val": "\"Loan\"",
+                  "offset": 25
                 }
               ],
-              "location": "AcctActivityNavDefs.credit_Account_should_have_under_show_transaction_account(String)"
+              "location": "AcctActivityNavDefs.loan_Account_should_have_as_default_option(String)"
             },
             "keyword": "And "
           }
