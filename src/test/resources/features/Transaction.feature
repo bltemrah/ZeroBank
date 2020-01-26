@@ -18,7 +18,7 @@ Feature: Find transaction in account activity
     Then the user should only see the results between "2012-09-02" and "2012-09-06"
     And the results table should NOT contain transactions dated "2012-09-01"
 
-  @wip
+
   Scenario: Search description
 
     When the user enters description "ONLINE"
@@ -35,6 +35,26 @@ Feature: Find transaction in account activity
     And clicks Find
     Then result table should only show transfer containing "ONLINE" under Description column
     When the user write "online" as a description
-    And clicks Find button
-    Then result table should only show transfer containing "ONLINE" under Description column
+    And clicks Find
+    Then result table should only show transfer containing "ONLINE"
+
+
+  @wip
+  Scenario: Type
+    And clicks Find
+    Then results table should show at least 1 result under Deposit
+    Then results table should show at least 1 result under Withdrawal
+    When user selects type "Deposit"
+    And clicks Find
+    Then results table should show at least 1 result under Deposit
+    Then results table should show no result under Withdrawal
+    When user selects "Withdrawal"
+    Then results table should show at least 1 result under Withdrawal
+     But results tbale should show no result under Deposit
+
+
+
+
+
+
 

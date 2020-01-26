@@ -102,4 +102,21 @@ public class AcctActivity {
         return dTable;
     }
 
+    @FindBy(xpath = "//div[@id ='filtered_transactions_for_account']//td[3]")
+    public List<WebElement> depositColumn;
+
+    @FindBy(xpath = "//div[@id ='filtered_transactions_for_account']//td[4]")
+    public List<WebElement> withdrawColumn;
+
+    @FindBy(css = "#aa_type")
+    public WebElement typeOptions;
+
+
+
+
+
+
+
+
+
 }

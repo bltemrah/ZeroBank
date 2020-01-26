@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3296896265,
+              "duration": 3070707666,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1481788456,
+              "duration": 1566495721,
               "status": "passed"
             },
             "line": 5,
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 970825010,
+              "duration": 1186210437,
               "status": "passed"
             },
             "line": 6,
@@ -63,7 +63,7 @@
           },
           {
             "result": {
-              "duration": 2067881493,
+              "duration": 2066381384,
               "status": "passed"
             },
             "line": 7,
@@ -76,11 +76,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-26T21:32:19.581Z",
+        "start_timestamp": "2020-01-26T23:37:46.945Z",
         "before": [
           {
             "result": {
-              "duration": 473517,
+              "duration": 480033,
               "status": "passed"
             },
             "match": {
@@ -88,14 +88,14 @@
             }
           }
         ],
-        "line": 22,
-        "name": "Search description",
+        "line": 43,
+        "name": "Type",
         "description": "",
-        "id": "find-transaction-in-account-activity;search-description",
+        "id": "find-transaction-in-account-activity;type",
         "after": [
           {
             "result": {
-              "duration": 84676662,
+              "duration": 79539633,
               "status": "passed"
             },
             "match": {
@@ -108,28 +108,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3089468861,
+              "duration": 3049223172,
               "status": "passed"
             },
-            "line": 24,
-            "name": "the user enters description \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 28
-                }
-              ],
-              "location": "FTransactionDefs.the_user_enters_description(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3052213975,
-              "status": "passed"
-            },
-            "line": 25,
+            "line": 44,
             "name": "clicks Find",
             "match": {
               "location": "FTransactionDefs.clicks_Find()"
@@ -138,46 +120,64 @@
           },
           {
             "result": {
-              "duration": 3045316369,
+              "duration": 3058517458,
               "status": "passed"
             },
-            "line": 26,
-            "name": "result table should only show transfer containing \"ONLINE\" under Description column",
+            "line": 45,
+            "name": "results table should show at least 1 result under Deposit",
             "match": {
               "arguments": [
                 {
-                  "val": "\"ONLINE\"",
-                  "offset": 50
+                  "val": "1",
+                  "offset": 35
                 }
               ],
-              "location": "FTransactionDefs.result_table_should_only_show_transfer_containing_under_Description_column(String)"
+              "location": "FTransactionDefs.results_table_should_show_at_least_result_under_Deposit(Integer)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6798004512,
+              "duration": 3043926204,
               "status": "passed"
             },
-            "line": 27,
-            "name": "the user enters \"OFFICE\" as a description",
+            "line": 46,
+            "name": "results table should show at least 1 result under Withdrawal",
             "match": {
               "arguments": [
                 {
-                  "val": "\"OFFICE\"",
-                  "offset": 16
+                  "val": "1",
+                  "offset": 35
                 }
               ],
-              "location": "FTransactionDefs.the_user_enters_as_a_description(String)"
+              "location": "FTransactionDefs.results_table_should_show_at_least_result_under_Withdrawal(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2100457802,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user selects type \"Deposit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 18
+                }
+              ],
+              "location": "FTransactionDefs.user_selects_type(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3079961532,
+              "duration": 3037757341,
               "status": "passed"
             },
-            "line": 28,
+            "line": 48,
             "name": "clicks Find",
             "match": {
               "location": "FTransactionDefs.clicks_Find()"
@@ -186,37 +186,79 @@
           },
           {
             "result": {
-              "duration": 3021924574,
+              "duration": 3031645320,
               "status": "passed"
             },
-            "line": 29,
-            "name": "results table should only display transfer containing \"OFFICE\"",
+            "line": 49,
+            "name": "results table should show at least 1 result under Deposit",
             "match": {
               "arguments": [
                 {
-                  "val": "\"OFFICE\"",
-                  "offset": 54
+                  "val": "1",
+                  "offset": 35
                 }
               ],
-              "location": "FTransactionDefs.results_table_should_only_display_transfer_containing(String)"
+              "location": "FTransactionDefs.results_table_should_show_at_least_result_under_Deposit(Integer)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3020663164,
+              "duration": 3031834029,
               "status": "passed"
             },
-            "line": 30,
-            "name": "results table should not display transfer containing \"ONLINE\"",
+            "line": 50,
+            "name": "results table should show no result under Withdrawal",
+            "match": {
+              "location": "FTransactionDefs.results_table_should_show_no_result_under_Withdrawal()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2116329440,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user selects \"Withdrawal\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"ONLINE\"",
-                  "offset": 53
+                  "val": "\"Withdrawal\"",
+                  "offset": 13
                 }
               ],
-              "location": "FTransactionDefs.results_table_should_not_display_transfer_containing(String)"
+              "location": "FTransactionDefs.user_selects(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3022339842,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "results table should show at least 1 result under Withdrawal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                }
+              ],
+              "location": "FTransactionDefs.results_table_should_show_at_least_result_under_Withdrawal(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3021927289,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "results tbale should show no result under Deposit",
+            "match": {
+              "location": "FTransactionDefs.results_tbale_should_show_no_result_under_Deposit()"
             },
             "keyword": "But "
           }
