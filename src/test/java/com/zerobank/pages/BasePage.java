@@ -37,14 +37,17 @@ public class BasePage {
     @FindBy (xpath = "(//a[@* = 'dropdown-toggle'])[1]")
     public WebElement setting;
 
-    @FindBy (xpath = "(//a[@* = 'dropdown-toggle'])[2]")
-    public WebElement Myprofile;
+    @FindBy (xpath = "cc")
+    public WebElement userName;
 
     @FindBy (xpath = "//title")
     public WebElement pageSubTitle;
 
     @FindBy (css = "#searchTerm")
     public WebElement searchBox;
+
+    @FindBy (css = "#logout_link")
+    public WebElement logOutLink;
 
 
 
@@ -58,6 +61,18 @@ public class BasePage {
         return pageSubTitle.getText();
     }
 
+
+    public String getUserName(){
+        waitUntilLoaderScreenDisappear();
+        BrowserUtils.waitForVisibility(userName, 5);
+        return userName.getText();
+    }
+
+    public void logOut(){
+        BrowserUtils.waitFor(2);
+        BrowserUtils.clickWithJS(userName);
+        BrowserUtils.clickWithJS(logOutLink);
+    }
 
     /**
      * Waits until loader screen present. If loader screen will not pop up at all,

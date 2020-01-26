@@ -14,4 +14,6 @@ Feature: Account summary page
     And the user enter "username" "password"
     When the user have account summary page
     Then the user should be able to see following tables
-      | Account | Credit Card | Balance |
+      | Account     |
+      | Credit Card |
+      | Balance     |

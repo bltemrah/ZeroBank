@@ -30,7 +30,7 @@ Feature: Navigating to specific accounts in Accounts Activity
     Then the page should be displayed "Zero - Account Activity"
     And Credit Account should have "Credit Card" as default option
 
-  @wip
+
   Scenario: Loan account redirect
 
     When the user clicks on Loan link on the Loan Account under Account Summary page
