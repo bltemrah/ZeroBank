@@ -39,7 +39,7 @@ Feature: Find transaction in account activity
     Then result table should only show transfer containing "ONLINE"
 
 
-  @wip
+
   Scenario: Type
     And clicks Find
     Then results table should show at least 1 result under Deposit

@@ -3,84 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3070707666,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the user navigates to login page",
-            "match": {
-              "location": "LoginStepDefs.the_user_navigates_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1566495721,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user enter \"username\" \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 26
-                }
-              ],
-              "location": "LoginStepDefs.the_user_enter(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1186210437,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user navigate to \"Account Activity\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Activity\"",
-                  "offset": 21
-                }
-              ],
-              "location": "AcctActivityDefs.the_user_navigate_to(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2066381384,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user accesses to Find Transactions",
-            "match": {
-              "location": "FTransactionDefs.the_user_accesses_to_Find_Transactions()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-26T23:37:46.945Z",
+        "start_timestamp": "2020-01-26T23:47:03.986Z",
         "before": [
           {
             "result": {
-              "duration": 480033,
+              "duration": 492627,
               "status": "passed"
             },
             "match": {
@@ -88,14 +15,14 @@
             }
           }
         ],
-        "line": 43,
-        "name": "Type",
+        "line": 4,
+        "name": "Add a new payee",
         "description": "",
-        "id": "find-transaction-in-account-activity;type",
+        "id": "add-new-payee-under-pay-bills;add-a-new-payee",
         "after": [
           {
             "result": {
-              "duration": 79539633,
+              "duration": 1167682,
               "status": "passed"
             },
             "match": {
@@ -108,159 +35,56 @@
         "steps": [
           {
             "result": {
-              "duration": 3049223172,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 44,
-            "name": "clicks Find",
-            "match": {
-              "location": "FTransactionDefs.clicks_Find()"
+            "line": 5,
+            "name": "Add New Payee tab",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 6,
+            "name": "creates new payee using following information",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Payee Name",
+                  "The Law Offices of Hyde, Price \u0026 Scharks"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee details",
+                  "XYZ account"
+                ]
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3058517458,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 45,
-            "name": "results table should show at least 1 result under Deposit",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
-                }
-              ],
-              "location": "FTransactionDefs.results_table_should_show_at_least_result_under_Deposit(Integer)"
-            },
+            "line": 11,
+            "name": "message \"The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created\"",
+            "match": {},
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3043926204,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "results table should show at least 1 result under Withdrawal",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
-                }
-              ],
-              "location": "FTransactionDefs.results_table_should_show_at_least_result_under_Withdrawal(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2100457802,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "user selects type \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Deposit\"",
-                  "offset": 18
-                }
-              ],
-              "location": "FTransactionDefs.user_selects_type(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3037757341,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "clicks Find",
-            "match": {
-              "location": "FTransactionDefs.clicks_Find()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3031645320,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "results table should show at least 1 result under Deposit",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
-                }
-              ],
-              "location": "FTransactionDefs.results_table_should_show_at_least_result_under_Deposit(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3031834029,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "results table should show no result under Withdrawal",
-            "match": {
-              "location": "FTransactionDefs.results_table_should_show_no_result_under_Withdrawal()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2116329440,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "user selects \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 13
-                }
-              ],
-              "location": "FTransactionDefs.user_selects(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3022339842,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "results table should show at least 1 result under Withdrawal",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
-                }
-              ],
-              "location": "FTransactionDefs.results_table_should_show_at_least_result_under_Withdrawal(Integer)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3021927289,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "results tbale should show no result under Deposit",
-            "match": {
-              "location": "FTransactionDefs.results_tbale_should_show_no_result_under_Deposit()"
-            },
-            "keyword": "But "
           }
         ],
         "tags": [
@@ -270,11 +94,11 @@
         ]
       }
     ],
-    "name": "Find transaction in account activity",
+    "name": "Add new payee under pay bills",
     "description": "",
-    "id": "find-transaction-in-account-activity",
+    "id": "add-new-payee-under-pay-bills",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Transaction.feature",
+    "uri": "file:src/test/resources/features/NewPayee.feature",
     "tags": []
   }
 ]
