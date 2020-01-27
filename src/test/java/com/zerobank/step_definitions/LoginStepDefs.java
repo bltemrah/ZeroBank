@@ -1,6 +1,7 @@
 package com.zerobank.step_definitions;
 
 import com.zerobank.pages.LoginPage;
+import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +13,7 @@ public class LoginStepDefs {
     @Given("the user navigates to login page")
     public void the_user_navigates_to_login_page() {
         LoginPage loginPage = new LoginPage();
+        BrowserUtils.waitFor(2);
         loginPage.navigateToLoginPage();
     }
 

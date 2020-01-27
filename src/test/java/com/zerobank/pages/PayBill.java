@@ -43,10 +43,35 @@ public class PayBill {
     @FindBy (xpath = "//input[@id='pay_saved_payees']")
     public WebElement payButton;
 
-
-
     @FindBy (xpath = "//div[@id='alert_content']/span")
     public WebElement payMsg;
+
+    @FindBy (css = "a[href = '#ui-tabs-2']")
+    public WebElement addNewPay;
+
+    @FindBy (css = "#np_new_payee_name")
+    public WebElement payName;
+
+    @FindBy (css = "#np_new_payee_address")
+    public WebElement payAddress;
+
+    @FindBy (css = "#np_new_payee_account")
+    public WebElement payAcct;
+
+    @FindBy (css = "#np_new_payee_details")
+    public WebElement payDetails;
+
+    @FindBy (xpath = "(//input[@type='submit'])[2]")
+    public WebElement addButton;
+
+    @FindBy (xpath = "//div[@id = 'alert_content']")
+    public WebElement message;
+
+
+
+
+
+
 
 
 
