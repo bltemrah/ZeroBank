@@ -31,6 +31,7 @@ Feature: Purchase Foreign Currency
 
   @wip
   Scenario: Error message for not entering value
+    Given the user access the Purchase foreign
 
 
 

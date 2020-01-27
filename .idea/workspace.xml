@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d0ad81d-0b09-4a77-960a-747319cfdd3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/NewPayeeDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/NewPayeeDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/PurchaseCurrencyDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/PurchaseCurrencyDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCur.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCur.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Transaction.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Transaction.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580086271009</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="ZeroBank First 5 pages">
+      <created>1580125848231</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1580125848231</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -297,11 +298,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="249" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579819547077" />
-    <state x="77" y="130" key="CommitChangelistDialog2" timestamp="1580086270913">
+    <state x="77" y="130" key="CommitChangelistDialog2" timestamp="1580125848131">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="77" y="130" key="CommitChangelistDialog2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826141087" />
-    <state x="77" y="130" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580086270913" />
+    <state x="77" y="130" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580125848131" />
     <state width="1047" height="333" key="GridCell.Tab.0.bottom" timestamp="1580125716424">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -330,11 +331,11 @@
     <state width="1060" height="294" key="GridCell.Tab.0.right/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054202" />
     <state width="1047" height="333" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580125716424" />
     <state width="1074" height="333" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1580083079680" />
-    <state x="84" y="266" key="Vcs.Push.Dialog.v2" timestamp="1580086272968">
+    <state x="84" y="266" key="Vcs.Push.Dialog.v2" timestamp="1580125850378">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="84" y="266" key="Vcs.Push.Dialog.v2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826143815" />
-    <state x="84" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1580086272968" />
+    <state x="84" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1580125850378" />
     <state x="448" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1579773943477">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
