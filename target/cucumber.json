@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5086411615,
+              "duration": 5949846284,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1542991100,
+              "duration": 6717643214,
               "status": "passed"
             },
             "line": 5,
@@ -46,11 +46,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-27T00:49:58.661Z",
+        "start_timestamp": "2020-01-27T11:48:37.023Z",
         "before": [
           {
             "result": {
-              "duration": 503029,
+              "duration": 537505,
               "status": "passed"
             },
             "match": {
@@ -58,14 +58,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "Available currency",
+        "line": 26,
+        "name": "Error message for not selecting currency",
         "description": "",
-        "id": "purchase-foreign-currency;available-currency",
+        "id": "purchase-foreign-currency;error-message-for-not-selecting-currency",
         "after": [
           {
             "result": {
-              "duration": 80895398,
+              "duration": 82280801,
               "status": "passed"
             },
             "match": {
@@ -78,10 +78,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1076815134,
+              "duration": 7253469839,
               "status": "passed"
             },
-            "line": 9,
+            "line": 27,
             "name": "Go to Pay Bills module",
             "match": {
               "location": "NewPayeeDefs.go_to_Pay_Bills_module()"
@@ -90,10 +90,10 @@
           },
           {
             "result": {
-              "duration": 2070225112,
+              "duration": 2062191598,
               "status": "passed"
             },
-            "line": 10,
+            "line": 28,
             "name": "click Purchase Foreign Currency",
             "match": {
               "location": "PurchaseCurrencyDefs.click_Purchase_Foreign_Currency()"
@@ -102,71 +102,32 @@
           },
           {
             "result": {
-              "duration": 3158576235,
+              "duration": 3086786276,
               "status": "passed"
             },
-            "line": 11,
-            "name": "Following currencies should be available",
+            "line": 29,
+            "name": "user tries to calculate cost without selection a currency",
             "match": {
-              "location": "PurchaseCurrencyDefs.following_currencies_should_be_available(String\u003e)"
+              "location": "PurchaseCurrencyDefs.user_tries_to_calculate_cost_without_selection_a_currency()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Canada (dollar)"
-                ]
-              },
-              {
-                "cells": [
-                  "Switzerland (franc)"
-                ]
-              },
-              {
-                "cells": [
-                  "China (yuan)"
-                ]
-              },
-              {
-                "cells": [
-                  "Denmark (krone)"
-                ]
-              },
-              {
-                "cells": [
-                  "Eurozone (euro)"
-                ]
-              },
-              {
-                "cells": [
-                  "Great Britain (pound)"
-                ]
-              },
-              {
-                "cells": [
-                  "Japan (yen)"
-                ]
-              },
-              {
-                "cells": [
-                  "Mexico (peso)"
-                ]
-              },
-              {
-                "cells": [
-                  "Norway (krone)"
-                ]
-              },
-              {
-                "cells": [
-                  "New Zealand (dollar)"
-                ]
-              },
-              {
-                "cells": [
-                  "Singapore (dollar)"
-                ]
-              }
-            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7946928,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the error message \"Please, ensure that you have filled all the required fields with valid values.\" should be seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please, ensure that you have filled all the required fields with valid values.\"",
+                  "offset": 18
+                }
+              ],
+              "location": "PurchaseCurrencyDefs.the_error_message_should_be_seen(String)"
+            },
             "keyword": "Then "
           }
         ],

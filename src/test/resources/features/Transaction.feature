@@ -29,7 +29,6 @@ Feature: Find transaction in account activity
     Then results table should only display transfer containing "OFFICE"
     But results table should not display transfer containing "ONLINE"
 
-
   Scenario: Search description case insensitive
     When the user enters description "ONLINE"
     And clicks Find
@@ -37,8 +36,6 @@ Feature: Find transaction in account activity
     When the user write "online" as a description
     And clicks Find
     Then result table should only show transfer containing "ONLINE"
-
-
 
   Scenario: Type
     And clicks Find

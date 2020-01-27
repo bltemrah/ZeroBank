@@ -2,9 +2,12 @@ package com.zerobank.step_definitions;
 
 import com.zerobank.pages.PayBill;
 import com.zerobank.utilities.BrowserUtils;
+import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 
 import java.util.List;
 
@@ -27,4 +30,24 @@ public class PurchaseCurrencyDefs {
         Assert.assertTrue(actualAcctTypes.containsAll(expCurList));
 
     }
+
+    @When("user tries to calculate cost without selection a currency")
+    public void user_tries_to_calculate_cost_without_selection_a_currency() {
+
+        PayBill payBill = new PayBill();
+        BrowserUtils.waitFor(3);
+        payBill.costCalc.click();
+
+    }
+
+    @Then("the error message {string} should be seen")
+    public void the_error_message_should_be_seen(String expMsg) {
+
+        Alert alert = Driver.get().switchTo().alert();
+        String actMsg = alert.getText();
+
+        Assert.assertEquals(expMsg,actMsg );
+
+    }
+
 }

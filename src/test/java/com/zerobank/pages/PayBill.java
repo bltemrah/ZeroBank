@@ -76,6 +76,9 @@ public class PayBill {
     public List<WebElement> currencyList;
 
 
+    @FindBy (css = "#pc_calculate_costs")
+    public WebElement costCalc;
+
 
 
 

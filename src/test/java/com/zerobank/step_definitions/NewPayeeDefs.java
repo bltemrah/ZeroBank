@@ -14,6 +14,7 @@ public class NewPayeeDefs {
     @Given("Go to Pay Bills module")
     public void go_to_Pay_Bills_module() {
         BasePage basePage = new BasePage();
+        BrowserUtils.waitFor(3);
         basePage.payBills.click();
     }
 

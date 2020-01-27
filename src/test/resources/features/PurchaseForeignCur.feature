@@ -4,7 +4,7 @@ Feature: Purchase Foreign Currency
     Given the user navigates to login page
     And the user enter "username" "password"
 
-  @wip
+
   Scenario: Available currency
     Given Go to Pay Bills module
     And click Purchase Foreign Currency
@@ -20,5 +20,18 @@ Feature: Purchase Foreign Currency
       | Norway (krone)        |
       | New Zealand (dollar)  |
       | Singapore (dollar)    |
+
+
+  @wip
+  Scenario: Error message for not selecting currency
+    Given Go to Pay Bills module
+    And click Purchase Foreign Currency
+    When user tries to calculate cost without selection a currency
+    Then the error message "Please, ensure that you have filled all the required fields with valid values." should be seen
+
+  @wip
+  Scenario: Error message for not entering value
+
+
 
 

@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d0ad81d-0b09-4a77-960a-747319cfdd3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/PurchaseCurrencyDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCur.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/NewPayee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/NewPayee.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/NewPayeeDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/NewPayeeDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/PurchaseCurrencyDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/PurchaseCurrencyDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCur.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCur.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Transaction.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Transaction.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/LoginStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/LoginStepDefs.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +245,28 @@
       <option name="project" value="LOCAL" />
       <updated>1580084857838</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="ZeroBank First Page">
+      <created>1580086224659</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1580086224659</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ZeroBank First Page">
+      <created>1580086238464</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1580086238464</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ZeroBank First 5 pages">
+      <created>1580086271009</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1580086271009</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -254,7 +275,8 @@
     <MESSAGE value="ZeroBank BasePage Locators" />
     <MESSAGE value="ZeroBank Account Activity" />
     <MESSAGE value="ZeroBank First Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="ZeroBank First Page" />
+    <MESSAGE value="ZeroBank First 5 pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="ZeroBank First 5 pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="296" y="299" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1580079078250">
@@ -275,52 +297,52 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="249" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579819547077" />
-    <state x="77" y="130" key="CommitChangelistDialog2" timestamp="1580086238381">
+    <state x="77" y="130" key="CommitChangelistDialog2" timestamp="1580086270913">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="77" y="130" key="CommitChangelistDialog2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826141087" />
-    <state x="77" y="130" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580086238381" />
-    <state width="1047" height="333" key="GridCell.Tab.0.bottom" timestamp="1580086198107">
+    <state x="77" y="130" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580086270913" />
+    <state width="1047" height="333" key="GridCell.Tab.0.bottom" timestamp="1580125716424">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.bottom/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168582" />
     <state width="1060" height="294" key="GridCell.Tab.0.bottom/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054203" />
-    <state width="1047" height="333" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580086198107" />
+    <state width="1047" height="333" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580125716424" />
     <state width="1074" height="333" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1580083079681" />
-    <state width="1047" height="333" key="GridCell.Tab.0.center" timestamp="1580086198106">
+    <state width="1047" height="333" key="GridCell.Tab.0.center" timestamp="1580125716423">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.center/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168581" />
     <state width="1060" height="294" key="GridCell.Tab.0.center/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054201" />
-    <state width="1047" height="333" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580086198106" />
+    <state width="1047" height="333" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580125716423" />
     <state width="1074" height="333" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1580083079678" />
-    <state width="1047" height="333" key="GridCell.Tab.0.left" timestamp="1580086198105">
+    <state width="1047" height="333" key="GridCell.Tab.0.left" timestamp="1580125716422">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.left/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168581" />
     <state width="1060" height="294" key="GridCell.Tab.0.left/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054200" />
-    <state width="1047" height="333" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580086198105" />
+    <state width="1047" height="333" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580125716422" />
     <state width="1074" height="333" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1580083079677" />
-    <state width="1047" height="333" key="GridCell.Tab.0.right" timestamp="1580086198107">
+    <state width="1047" height="333" key="GridCell.Tab.0.right" timestamp="1580125716424">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1166" height="280" key="GridCell.Tab.0.right/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579772168582" />
     <state width="1060" height="294" key="GridCell.Tab.0.right/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826054202" />
-    <state width="1047" height="333" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580086198107" />
+    <state width="1047" height="333" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580125716424" />
     <state width="1074" height="333" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1580083079680" />
-    <state x="84" y="266" key="Vcs.Push.Dialog.v2" timestamp="1580086241814">
+    <state x="84" y="266" key="Vcs.Push.Dialog.v2" timestamp="1580086272968">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="84" y="266" key="Vcs.Push.Dialog.v2/-1920.85.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579826143815" />
-    <state x="84" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1580086241814" />
+    <state x="84" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1580086272968" />
     <state x="448" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1579773943477">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="448" y="403" key="com.intellij.ide.util.TipDialog/-1920.108.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1579773943477" />
-    <state x="168" y="289" width="689" height="565" key="find.popup" timestamp="1580085847743">
+    <state x="168" y="289" width="689" height="565" key="find.popup" timestamp="1580124143586">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="168" y="289" width="689" height="565" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1580085847743" />
+    <state x="168" y="289" width="689" height="565" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1580124143586" />
     <state x="0" y="226" key="new project wizard" timestamp="1579965875380">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -329,9 +351,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="278" y="458" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1579878940634" />
-    <state x="121" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1579884488327">
+    <state x="121" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1580123324363">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="121" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1579884488327" />
+    <state x="121" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1580123324363" />
   </component>
 </project>
