@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class PayBill {
 
     public PayBill() {
@@ -67,11 +69,11 @@ public class PayBill {
     @FindBy (xpath = "//div[@id = 'alert_content']")
     public WebElement message;
 
+    @FindBy (xpath = "//a[@href = '#ui-tabs-3']")
+    public WebElement currency;
 
-
-
-
-
+    @FindBy (xpath = "//select[@id = 'pc_currency']/option")
+    public List<WebElement> currencyList;
 
 
 

@@ -4,7 +4,7 @@ Feature: Add new payee under pay bills
     Given the user navigates to login page
     And the user enter "username" "password"
 
-  @wip
+
   Scenario: Add a new payee
     Given Go to Pay Bills module
     And Add New Payee tab
