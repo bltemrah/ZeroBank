@@ -50,4 +50,11 @@ public class PurchaseCurrencyDefs {
 
     }
 
+    @When("user tries to calculate cost without entering value")
+    public void user_tries_to_calculate_cost_without_entering_value() {
+        PayBill payBill = new PayBill();
+        BrowserUtils.waitFor(3);
+        payBill.costCalc.click();
+    }
+
 }

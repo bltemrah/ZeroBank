@@ -22,7 +22,7 @@ Feature: Purchase Foreign Currency
       | Singapore (dollar)    |
 
 
-  @wip
+
   Scenario: Error message for not selecting currency
     Given Go to Pay Bills module
     And click Purchase Foreign Currency
@@ -31,7 +31,11 @@ Feature: Purchase Foreign Currency
 
   @wip
   Scenario: Error message for not entering value
-    Given the user access the Purchase foreign
+    Given Go to Pay Bills module
+    Given click Purchase Foreign Currency
+    When user tries to calculate cost without entering value
+    Then the error message "Please, ensure that you have filled all the required fields with valid values." should be seen
+
 
 
 

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5949846284,
+              "duration": 15243357785,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 6717643214,
+              "duration": 13858754855,
               "status": "passed"
             },
             "line": 5,
@@ -46,11 +46,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-27T11:48:37.023Z",
+        "start_timestamp": "2020-01-27T16:26:43.446Z",
         "before": [
           {
             "result": {
-              "duration": 537505,
+              "duration": 489059,
               "status": "passed"
             },
             "match": {
@@ -58,14 +58,14 @@
             }
           }
         ],
-        "line": 26,
-        "name": "Error message for not selecting currency",
+        "line": 33,
+        "name": "Error message for not entering value",
         "description": "",
-        "id": "purchase-foreign-currency;error-message-for-not-selecting-currency",
+        "id": "purchase-foreign-currency;error-message-for-not-entering-value",
         "after": [
           {
             "result": {
-              "duration": 82280801,
+              "duration": 85555154,
               "status": "passed"
             },
             "match": {
@@ -78,10 +78,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7253469839,
+              "duration": 9185193623,
               "status": "passed"
             },
-            "line": 27,
+            "line": 34,
             "name": "Go to Pay Bills module",
             "match": {
               "location": "NewPayeeDefs.go_to_Pay_Bills_module()"
@@ -90,34 +90,34 @@
           },
           {
             "result": {
-              "duration": 2062191598,
+              "duration": 2059263290,
               "status": "passed"
             },
-            "line": 28,
+            "line": 35,
             "name": "click Purchase Foreign Currency",
             "match": {
               "location": "PurchaseCurrencyDefs.click_Purchase_Foreign_Currency()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3086786276,
+              "duration": 3094500869,
               "status": "passed"
             },
-            "line": 29,
-            "name": "user tries to calculate cost without selection a currency",
+            "line": 36,
+            "name": "user tries to calculate cost without entering value",
             "match": {
-              "location": "PurchaseCurrencyDefs.user_tries_to_calculate_cost_without_selection_a_currency()"
+              "location": "PurchaseCurrencyDefs.user_tries_to_calculate_cost_without_entering_value()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7946928,
+              "duration": 8914905,
               "status": "passed"
             },
-            "line": 30,
+            "line": 37,
             "name": "the error message \"Please, ensure that you have filled all the required fields with valid values.\" should be seen",
             "match": {
               "arguments": [
