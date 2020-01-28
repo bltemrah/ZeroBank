@@ -112,10 +112,8 @@ public class AcctActivity {
     public WebElement typeOptions;
 
 
-
-
-
-
+    @FindBy(xpath = "//div[@class = 'well']")
+    public WebElement errorMsg;
 
 
 

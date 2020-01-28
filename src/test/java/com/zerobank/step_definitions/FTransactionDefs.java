@@ -57,7 +57,13 @@ public class FTransactionDefs {
 
         Integer size = creditT.size();
 
-        Assert.assertTrue(size>0);
+        String actMsg2 = acctActivity.errorMsg.getText();
+        System.out.println("actMsg2 = " + actMsg2);
+
+        if (size==0) {
+            Assert.assertNotEquals("Verify that the message", "No results.", actMsg2);
+        }
+
     }
 
     @When("the user enters {string} as a description")
