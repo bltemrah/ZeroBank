@@ -39,13 +39,25 @@ public class FTransactionDefs {
     public void result_table_should_only_show_transfer_containing_under_Description_column(String expDesc) {
 
         AcctActivity acctActivity = new AcctActivity();
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(2);
         List<String> creditT = BrowserUtils.getElementsAttribute(acctActivity.descriptionTable);
         System.out.println(creditT);
 
         for (int i = 0; i < creditT.size(); i++) {
             Assert.assertTrue(creditT.get(i).contains(expDesc));
         }
+    }
+
+    @Then("result table should show only transfer containing {string}")
+    public void result_table_should_show_only_transfer_containing(String expDesc) {
+        AcctActivity acctActivity = new AcctActivity();
+        BrowserUtils.waitFor(2);
+        List<String> creditT = BrowserUtils.getElementsAttribute(acctActivity.descriptionTable);
+        System.out.println(creditT);
+
+        Integer size = creditT.size();
+
+        Assert.assertTrue(size>0);
     }
 
     @When("the user enters {string} as a description")
@@ -99,6 +111,7 @@ public class FTransactionDefs {
         acctActivity.description.sendKeys(desc);
         BrowserUtils.waitFor(3);
     }
+
 
     @Then("result table should only show transfer containing {string}")
     public void result_table_should_only_show_transfer_containing(String expDesc) {

@@ -29,7 +29,7 @@ Feature: Purchase Foreign Currency
     When user tries to calculate cost without selection a currency
     Then the error message "Please, ensure that you have filled all the required fields with valid values." should be seen
 
-  @wip
+
   Scenario: Error message for not entering value
     Given Go to Pay Bills module
     Given click Purchase Foreign Currency

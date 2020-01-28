@@ -6,15 +6,15 @@ Feature: Find transaction in account activity
     Given the user navigate to "Account Activity"
     When the user accesses to Find Transactions
 
-
+  @wip
   Scenario: Search data range
 
     And the user enters date from "2012-09-01" to "2012-09-06"
-    When clicks Find button
+    And clicks Find
     Then results table should only show transactions date from "2012-09-01" to "2012-09-06"
     And the results should be sorted by most recent date
     When the user enters date range from "2012-09-02" to "2012-09-06"
-    And clicks Find button
+    And clicks Find
     Then the user should only see the results between "2012-09-02" and "2012-09-06"
     And the results table should NOT contain transactions dated "2012-09-01"
 
@@ -29,13 +29,14 @@ Feature: Find transaction in account activity
     Then results table should only display transfer containing "OFFICE"
     But results table should not display transfer containing "ONLINE"
 
+    @Test
   Scenario: Search description case insensitive
     When the user enters description "ONLINE"
     And clicks Find
     Then result table should only show transfer containing "ONLINE" under Description column
     When the user write "online" as a description
     And clicks Find
-    Then result table should only show transfer containing "ONLINE"
+    Then result table should show only transfer containing "ONLINE"
 
   Scenario: Type
     And clicks Find

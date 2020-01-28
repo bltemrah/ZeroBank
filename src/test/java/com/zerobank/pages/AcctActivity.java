@@ -68,12 +68,12 @@ public class AcctActivity {
     @FindBy(css = "button[type='submit']")
     public WebElement findButton;
 
-    @FindBy(xpath = "//div[@id ='filtered_transactions_for_account']//td[1]")
+    @FindBy(xpath = "(//div[@id = 'filtered_transactions_for_account']//tr)/td[1]")
     public List<WebElement> dateRange;
 
     public List<String> dRange() {
 
-        List<WebElement> drange = Driver.get().findElements(By.xpath("(//tbody)[2]//td[1]"));
+        List<WebElement> drange = Driver.get().findElements(By.xpath("(//div[@id = 'filtered_transactions_for_account']//tr)/td[1]"));
 
         List<String> dRange = new ArrayList<>();
 
