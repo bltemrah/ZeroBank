@@ -6,7 +6,7 @@ Feature: Find transaction in account activity
     Given the user navigate to "Account Activity"
     When the user accesses to Find Transactions
 
-  @wip
+
   Scenario: Search data range
 
     And the user enters date from "2012-09-01" to "2012-09-06"

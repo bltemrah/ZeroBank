@@ -28,7 +28,7 @@ public class BasePage {
     @FindBy (xpath = "//a[. ='Pay Bills']")
     public WebElement payBills;
 
-    @FindBy (xpath = "//a[. ='My Money Map']")
+    @FindBy (css = "#money_map_tab")
     public WebElement myMoneyMap;
 
     @FindBy (xpath = "//a[. ='Online Statements']")

@@ -3,84 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5080046587,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the user navigates to login page",
-            "match": {
-              "location": "LoginStepDefs.the_user_navigates_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1218277075,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user enter \"username\" \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"username\"",
-                  "offset": 15
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 26
-                }
-              ],
-              "location": "LoginStepDefs.the_user_enter(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 984228987,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user navigate to \"Account Activity\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account Activity\"",
-                  "offset": 21
-                }
-              ],
-              "location": "AcctActivityDefs.the_user_navigate_to(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2069771797,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user accesses to Find Transactions",
-            "match": {
-              "location": "FTransactionDefs.the_user_accesses_to_Find_Transactions()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-01-28T11:27:06.199Z",
+        "start_timestamp": "2020-02-01T11:17:29.926Z",
         "before": [
           {
             "result": {
-              "duration": 492776,
+              "duration": 663425,
               "status": "passed"
             },
             "match": {
@@ -88,14 +15,14 @@
             }
           }
         ],
-        "line": 33,
-        "name": "Search description case insensitive",
+        "line": 4,
+        "name": "The user should be able to see retail on the chart",
         "description": "",
-        "id": "find-transaction-in-account-activity;search-description-case-insensitive",
+        "id": "outflow-chart;the-user-should-be-able-to-see-retail-on-the-chart",
         "after": [
           {
             "result": {
-              "duration": 79727925,
+              "duration": 82689093,
               "status": "passed"
             },
             "match": {
@@ -108,113 +35,71 @@
         "steps": [
           {
             "result": {
-              "duration": 3089190808,
+              "duration": 5313041507,
               "status": "passed"
             },
-            "line": 34,
-            "name": "the user enters description \"ONLINE\"",
+            "line": 5,
+            "name": "the user navigates to login page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 28
-                }
-              ],
-              "location": "FTransactionDefs.the_user_enters_description(String)"
+              "location": "LoginStepDefs.the_user_navigates_to_login_page()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3091396649,
+              "duration": 4550190479,
               "status": "passed"
             },
-            "line": 35,
-            "name": "clicks Find",
+            "line": 6,
+            "name": "the user enters the valid credential for login",
             "match": {
-              "location": "FTransactionDefs.clicks_Find()"
+              "location": "MyMoneyMapStepDefs.the_user_enters_the_valid_credential_for_login()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2043707220,
+              "duration": 11499588282,
               "status": "passed"
             },
-            "line": 36,
-            "name": "result table should only show transfer containing \"ONLINE\" under Description column",
+            "line": 7,
+            "name": "the user click to My Money Map tab",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 50
-                }
-              ],
-              "location": "FTransactionDefs.result_table_should_only_show_transfer_containing_under_Description_column(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9437561551,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "the user write \"online\" as a description",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"online\"",
-                  "offset": 15
-                }
-              ],
-              "location": "FTransactionDefs.the_user_write_as_a_description(String)"
+              "location": "MyMoneyMapStepDefs.the_user_click_to_My_Money_Map_tab()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3086851800,
+              "duration": 157584,
               "status": "passed"
             },
-            "line": 38,
-            "name": "clicks Find",
-            "match": {
-              "location": "FTransactionDefs.clicks_Find()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2042609438,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "result table should show only transfer containing \"ONLINE\"",
+            "line": 8,
+            "name": "the user should be able to see \"Retail\" on the chart",
             "match": {
               "arguments": [
                 {
-                  "val": "\"ONLINE\"",
-                  "offset": 50
+                  "val": "\"Retail\"",
+                  "offset": 31
                 }
               ],
-              "location": "FTransactionDefs.result_table_should_show_only_transfer_containing(String)"
+              "location": "MyMoneyMapStepDefs.the_user_should_be_able_to_see_on_the_chart(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Test"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Find transaction in account activity",
+    "name": "OutFlow chart",
     "description": "",
-    "id": "find-transaction-in-account-activity",
+    "id": "outflow-chart",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Transaction.feature",
+    "uri": "file:src/test/resources/features/MyMoneyMap.feature",
     "tags": []
   }
 ]
